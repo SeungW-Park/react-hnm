@@ -12,7 +12,7 @@ const ProductDetail = () => {
 
   const getProductDetail = async () => {
     setLoading(true);
-    const url = new URL(`https://my-json-server.typicode.com/SeungW-Park/React/fourth-react-project/products/${id}`);
+    const url = new URL(`https://my-json-server.typicode.com/SeungW-Park/react-hnm/products/${id}`);
     const res = await fetch(url);
     const data = await res.json();
 
