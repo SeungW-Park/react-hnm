@@ -33,10 +33,10 @@ const Navbar = ({ toggle, setToggle, authenticate, setAuthenticate }) => {
 
   const searchItems = (event) => {
     if (event.key === "Enter" || event.button === 0) {
-      if (keyword === '') {
-        alert('검색어를 입력해주세요.');
-        return;
-      }
+      // if (keyword === '') {
+      //   alert('검색어를 입력해주세요.');
+      //   return;
+      // }
       navigate(`/?q=${keyword}`);
       event.target.value = "";
       setKeyword('');
